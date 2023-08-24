@@ -3,7 +3,8 @@
     margin:0px;
     padding:0px;
 }
-section
+
+#first
 {
     display:flex;
     justify-content: center;
@@ -51,5 +52,236 @@ h1
 {
     margin-left: 27px;
     margin-top:26px;
-    color: aqua;
+    color:blue;
+}
+.features img
+{
+    margin-left:400px;
+    margin-top:40px;
+    background-position: center;
+}
+.sentences
+{
+    font:6000px;
+    font-size:xx-large;
+    font-weight:bolder;
+    color: black;
+    margin-left:600px;
+}
+#button-wrapper
+{
+    display:flex;
+    justify-content: space-around;
+    width:50%;
+    margin-left:25%;
+    margin-top:20px;
+}
+.fourths
+{
+    height:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+button
+{
+    height:50px;
+    width:100px;
+    background-color: transparent;
+    border:blue;
+    border-style: solid;
+    color:lightcoral;
+}
+#buttons:hover
+{
+    background-color: lightskyblue;
+}
+#wrappers
+{
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:20px;
+}
+
+
+/* =================start of cards section styles ========*/
+#front-page
+{
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:100px;
+}
+
+.card-wrapper
+{
+    height:400px;
+    width:28%;
+    border-bottom: 1px solid black;
+    margin-bottom:30px;
+}
+.card-image{
+    height: 40%;
+    background-color: lightgray;
+}
+.card-image img{
+    height: 85%;
+    margin:7%;
+    width: 85%;
+}
+#card-content
+{
+   height:40%;
+}
+
+.card-footer{
+    height: 20%;
+}
+
+#Spotless
+{
+    font-size:x-large;
+    font-weight: bolder;
+    color: lightgreen;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+#card-text
+{
+    margin-bottom:10px;
+}
+
+.card-button-wrapper
+{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  margin-top:10px;
+}
+
+.button-wrapper
+{
+  display: flex;
+  justify-content: space-around;
+  width:50%;
+  margin-left:30px;
+  margin-top:10px;
+}
+
+
+/* =================end of cards section styles ========*/
+
+
+/*==================start of about section styles=====================*/
+
+.About-page
+{
+  background-image:url(./tjay.jpg);
+  background-repeat: no-repeat;
+  background-color: lightcoral;
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  height:400px;
+  color:aquamarine;
+  font-size:200px;
+  font-weight:bolder;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+/*==================end of about section styles=====================*/
+
+
+/*===================Start of next page===============================*/
+#sentence
+{
+    margin-top:95px;
+    margin-left:100px;
+    margin-bottom:90px;
+    width:50%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:20px;
+}
+.next-page
+{
+   display:flex;
+   justify-content: space-between;
+   margin-top:96px;
+   margin-bottom:100px;
+}
+
+#Text
+{
+    font-size:100px;
+    color: black;
+    margin-left:600px;
+    margin-bottom:50px;
+}
+.card-container text
+{
+    font-size: smaller;
+    font-weight: normal;
+
+}
+.next-pages img
+{
+    margin-left:100px;
+    margin-bottom:10px;
+}
+
+.graph-container
+{
+    width:50%;
+}
+
+.graph-rectangle{
+    width: 90%;
+    height: 40px;
+    background-color: lightgray;
+    margin-bottom:10px;
+}
+.graph-percentage{
+    width: 67%;
+    height: 40px;
+    background-color:deeppink;
+}
+.wordpress-graph-percentage
+{
+    background-color: aquamarine;
+    width:59%;
+    height:40px;
+}
+.photoshop-graph-percentage
+{
+    background-color: cyan;
+    width:80%;
+    height:40px;
+}
+.marketing-graph-percentage
+{
+    background-color:chartreuse;
+    width:70%;
+    height:40px;
+}
+/*===================End of next page=================================*/
+
+#button
+{
+    height:50px;
+    width:100px;
+    background-color: transparent;
+    border:blue;
+    border-style: solid;
+    color:lightcoral;
+    margin-left:100px;
 }
