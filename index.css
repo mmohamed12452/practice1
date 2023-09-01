@@ -3,7 +3,33 @@
     margin:0px;
     padding:0px;
 }
-
+/*=============================Start of Navigation bar==============================*/
+header
+{
+    background-color: black;
+    color:white;
+    height:100px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header img
+{
+    height:70%;
+}
+.topnav a
+{
+    text-decoration: none;
+    color:white;
+    font-size:1.5em;
+    text-transform: uppercase;
+    margin-right:20px;
+}
+.topnav a:hover
+{
+    color:aquamarine;
+}
+/*=============================End of Navigation bar================================*/
 #first
 {
     display:flex;
@@ -88,9 +114,10 @@ button
     height:50px;
     width:100px;
     background-color: transparent;
-    border:blue;
+    border:deepskyblue;
     border-style: solid;
-    color:lightcoral;
+    color:lightcoral !important;
+    margin-left:-100px;
 }
 #buttons:hover
 {
@@ -105,6 +132,11 @@ button
 }
 
 
+
+section
+{
+   width:100% !important;
+}
 /* =================start of cards section styles ========*/
 #front-page
 {
@@ -172,8 +204,29 @@ button
   margin-left:30px;
   margin-top:10px;
 }
-
-
+.team-card-container h1
+{
+  font-size: 34px;
+  font-weight:50px;
+  color: lightcoral;
+}
+.team-card-container h4
+{
+  color:grey;
+  margin-top:10px;
+  margin-bottom:30px;
+}
+.team-card-container p
+{
+    margin-left: 10px;
+    margin-right:10px;
+}
+.container
+{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
 /* =================end of cards section styles ========*/
 
 
@@ -181,7 +234,7 @@ button
 
 .About-page
 {
-  background-image:url(./tjay.jpg);
+  background-image:url(./pop.gif);
   background-repeat: no-repeat;
   background-color: lightcoral;
   background-size: cover;
@@ -196,7 +249,11 @@ button
   align-items: center;
   text-transform: uppercase;
 }
-
+.cards
+{
+   background-image: url(./tjay.jpg) !important;
+   margin-bottom:140px;
+}
 /*==================end of about section styles=====================*/
 
 
@@ -219,7 +276,16 @@ button
    margin-top:96px;
    margin-bottom:100px;
 }
-
+.next-pages
+{
+    width:80%;
+    margin-left: 10%;
+    margin-right:10%;
+}
+.address
+{
+  margin-top:30px;
+}
 #Text
 {
     font-size:100px;
@@ -262,29 +328,149 @@ button
     width:70%;
     height:40px;
 }
+.line hr
+{
+    margin-bottom:300px;
+    border: -4px solid grey;
+    border-radius: 10px;
+    height:150%;
+    width:103%;
+
+}
+.lorems p
+{
+    font-size: 90px;
+    color: black;
+    margin-top:-200px;
+    margin-left:400px;
+    margin-bottom:40px;
+}
+
+
 /*===================End of next page=================================*/
 
 /*===================start of team section=================================*/
 .team-card-container{
     width: 30%;
     height: 450px;
+    text-align: center;
+    margin-bottom:30px;
 }
 
-.team-card-container img{
+.team-card-container img
+{
     width: 100%;
-    height: 30%;
+    height: 30%; 
 }
-
+.whole img
+{
+   height:70%;
+}
 
 /*===================end of team section=================================*/
 
 #button
 {
     height:50px;
-    width:100px;
+    width:200px;
     background-color: transparent;
+    font-weight:bolder;
     border:blue;
     border-style: solid;
     color:lightcoral;
-    margin-left:100px;
+    margin-left:800px;
+    margin-top:-200px !important;
+    margin-bottom: 300px;
 }
+
+#button:hover
+{
+    background-color: deepskyblue;
+}
+
+/*=========================Contact-Page===========================*/
+#Contact-page
+{
+   background-image: url(./wood.jpg);
+   background-repeat: no-repeat;
+   background-size:cover;
+   width:100%;
+   padding-top: 80px;
+}
+#Contact-page h1
+{
+    text-align: center;
+    color:aqua;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    font-size:40px;
+}
+#Contact-page p
+{
+    margin-left:400px;
+    margin-right:400px;
+    text-align: center;
+    color:whitesmoke;
+    font-weight:bolder;
+    font-size:larger;
+}
+#forms
+{
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    padding-top:30px;
+
+}
+#forms div input
+{
+   height:60px;
+   width:49%;
+}
+#forms div
+{
+   display:flex;
+   justify-content:space-between;
+}
+textarea
+{
+    width:100%;
+    margin-top:20px;
+}
+#forms-button
+{
+   margin-top:40px;
+   margin-left:460px;
+   width:140px;
+   margin-bottom:40px;
+}
+#forms-button:hover
+{
+    background-color: greenyellow !important;
+}
+#Contact-info
+{
+   font-weight:bolder;
+   font-size:60px !important;
+}
+
+
+/*=========================End of Contact-Page============================*/
+
+
+/*========================Start of Footer=================================*/
+footer
+{
+  background-color: black;
+  color:white;
+  height:100px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#foots p
+{
+    display: inline;
+    margin-right:30px;
+}
+/*========================End of Footer===================================*/
