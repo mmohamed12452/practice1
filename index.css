@@ -167,7 +167,7 @@ button {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 20px;
-  font-size:4vw;
+  font-size:3vh;
   text-align: center;
 }
 
@@ -501,7 +501,7 @@ textarea {
 }
 #forms-button {
   margin-top: 40px;
-  margin-left: 460px;
+  margin-left:-60px;
   width: 140px;
   margin-bottom: 40px;
 }
@@ -520,11 +520,14 @@ textarea {
 footer {
   background-color: black;
   color: white;
-  height: 100px;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 #foots p {
   display: inline;
   margin-right: 30px;
@@ -532,10 +535,23 @@ footer {
 }
 @media screen and (max-width:480px)
 {
-    #foots p
-    {
-        width:100%;
-    }
+    footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      footer p{
+        text-align: center;
+      }
+
+      #foots p {
+        display: block !important;
+        margin-top: 20px;
+        text-align: center !important;
+        
+      }
+   
 }
 
 /*========================End of Footer===================================*/
