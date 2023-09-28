@@ -3,18 +3,53 @@
   padding: 0px;
 }
 /*=============================Start of Navigation bar==============================*/
-header {
+#menu-icon
+{
+  font-size:60px;
+  display: none;
+}
+@media screen and (max-width:480px)
+{
+  #menu-icon
+  {
+    display: flex;
+  }
+  .topnav
+  {
+    display: none;
+  }
+
+  .topnav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  header
+  {
+    justify-content: space-between;
+
+  }
+  .show-menu
+  {
+    display:flex !important;
+  }
+}
+header 
+{
   background-color: black;
   color: white;
-  height: 100px;
+  height: auto;
+  width:100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: sticky;
+  padding-top:10px;
+  padding-bottom: 10px;
   top: 0;
 }
 header img {
-  height: 70%;
+  height: 60px;
 }
 .topnav a {
   text-decoration: none;
@@ -107,7 +142,6 @@ h1 {
 
   #buttons {
     width: 100% !important;
-
   }
 }
 .sentences 
@@ -190,17 +224,25 @@ section {
   height: 400px;
   width: 28%;
   border-bottom: 1px solid black;
-  margin-bottom: 30px;
 }
+
 @media screen and (max-width:480px)
 {
     .card-wrapper
     {
-       width:90%;
+      
+      width:100% !important;
     }
 }
-
-.card-image {
+@media screen and (max-width:768px)
+{
+  .card-wrapper
+  {
+    width:48%;
+  }
+}
+.card-image 
+{
   height: 40%;
   background-color: lightgray;
 }
@@ -299,40 +341,55 @@ section {
 
 /*===================Start of next page===============================*/
 
-#sentence {
-  margin-top: 95px;
-  margin-left: 25%;
-  margin-right:25%;
+#sentence
+{
+  margin-top: 50px;
   margin-bottom: 90px;
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
+  font-size:30px;
 }
-@media screen and (max-width: 480px) {
-  #sentence {
+
+
+@media screen and (max-width: 768px) 
+{
+  .graph-container 
+  {
     width: 100% !important;
   }
+}
+
+
+@media screen and (max-width:480px)
+{
+  #sentence
+  {
+    width: 100% !important;
+  }
+  
+  .graph-container 
+  {
+    width: 100% !important;
+  }
+}
+
+  .next-page
+  {
+    display:flex;
+    margin-top:50px;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    flex-wrap:wrap;
+  }
+
 
   .graph-container {
-    width: 100% !important;
+    width: 50%;
   }
 
-  .next-page {
-    width:100% !important;
-    justify-content: center !important;
-    margin-top: 0px;
-    margin-bottom: 50px;
-  }
-}
-.next-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 96px;
-  margin-bottom: 100px;
-}
 .next-pages {
   width: 80%;
   margin-left: 10%;
@@ -344,14 +401,10 @@ section {
 #Text {
   font-size: 100px;
   color: black;
-  margin-left: 600px;
+  margin-top:10px;
   margin-bottom: 50px;
+  text-align:center;
 }
-
-.graph-container {
-  width: 50%;
-}
-
 .graph-rectangle {
   width: 90%;
   height: 40px;
@@ -417,10 +470,18 @@ section {
 
 @media screen and (max-width: 480px) {
   .team-card-container {
-    width: 90%;
+    width: 90% !important;
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width:768px)
+{
+  .team-card-container
+  {
+    width:48%;
+  }
+}
+
 /*===================end of team section=================================*/
 
 #button {
@@ -501,9 +562,19 @@ textarea {
 }
 #forms-button {
   margin-top: 40px;
-  margin-left:-60px;
+  margin-left:430px;
   width: 140px;
   margin-bottom: 40px;
+}
+@media screen and (max-width:480px)
+{
+    #forms-button
+    {
+        width:60%;
+        margin-left:-420px;
+        margin-right:100px;
+        
+    }
 }
 #forms-button:hover {
   background-color: greenyellow !important;
